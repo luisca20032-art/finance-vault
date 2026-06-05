@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Variables de marca Grant Thornton ────────────────────────── */
+:root {
+  --gt-purple:     #4F2D7F;
+  --gt-purple-80:  #72579A;
+  --gt-purple-60:  #9581B2;
+  --gt-purple-40:  #B9ABCC;
+  --gt-purple-20:  #DCD5E5;
+  --gt-teal:       #00A7B5;
+  --gt-green:      #9BD732;
+  --gt-orange:     #FF7D1E;
+  --gt-red:        #DE002E;
+  --gt-warm-grey:  #CBC4BC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #F9F8FB;
+  color: #000000;
+}
+
+/* Tipografía base según guía GT */
+h1, h2, h3 {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--gt-purple);
+}
+
+h4, h5, h6 {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--gt-purple);
+}
+
+p, span, li, td, th {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  color: #000000;
+}
+
+/* Focus con color GT */
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--gt-purple);
+  outline-offset: 0;
+}
+
+/* Scrollbar sutil con tinte GT */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gt-purple-40);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gt-purple-60);
+}
